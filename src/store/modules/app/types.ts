@@ -32,7 +32,7 @@ export interface MenuItem {
   perms?: string;
   status: 0 | 1;
   remark?: string;
-  show: 0 | 1;
+  display: 0 | 1;
   cache: 0 | 1;
   parent_id?: number;
   children: MenuItem[] | [];

@@ -313,7 +313,7 @@
     deleteCasbinPolicies,
     queryCasbinPoliciesByRole,
   } from '@/api/casbin';
-  import { querySysDataRuleAll, SysDataRuleRes } from '@/api/data-rule';
+  import { querySysDataRuleAll } from '@/api/data-rule';
 
   const { t } = useI18n();
   const { loading, setLoading } = useLoading(true);
