@@ -43,7 +43,7 @@ export default {
   'admin.menu.columns.perms': 'Permissions',
   'admin.menu.columns.sort': 'Sort',
   'admin.menu.columns.sort.placeholder': 'Please enter',
-  'admin.menu.columns.show': 'Is show',
+  'admin.menu.columns.display': 'Is display',
   'admin.menu.columns.cache': 'Is cache',
   'admin.menu.columns.status': 'Status',
   'admin.menu.columns.remark': 'Remark',

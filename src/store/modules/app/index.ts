@@ -34,7 +34,7 @@ function generateMenu(
         roles: ['*'], // TODO: menu.perms ? menu.perms.split(',') : [],
         requiresAuth: !WHITE_LIST.some((item) => item.name === menu.name),
         icon: menu.icon,
-        hideInMenu: menu.show === 0,
+        hideInMenu: menu.display === 0,
         ignoreCache: menu.cache === 0,
         order: menu.sort,
         locale: parentName

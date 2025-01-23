@@ -42,7 +42,7 @@ export default {
   'admin.menu.columns.perms': '权限标识',
   'admin.menu.columns.sort': '排序',
   'admin.menu.columns.sort.placeholder': '请输入',
-  'admin.menu.columns.show': '是否显示',
+  'admin.menu.columns.display': '是否显示',
   'admin.menu.columns.cache': '是否缓存',
   'admin.menu.columns.status': '状态',
   'admin.menu.columns.remark': '备注',

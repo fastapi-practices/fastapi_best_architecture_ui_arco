@@ -13,7 +13,7 @@ export interface SysMenuRes {
   component?: string;
   perms?: string;
   status: 0 | 1;
-  show: 0 | 1;
+  display: 0 | 1;
   cache: 0 | 1;
   remark?: string;
   created_time: string;
@@ -34,7 +34,7 @@ export interface SysMenuReq {
   component?: string;
   perms?: string;
   status: 0 | 1;
-  show: 0 | 1;
+  display: 0 | 1;
   cache: 0 | 1;
   remark?: string;
 }

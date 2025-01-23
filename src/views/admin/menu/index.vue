@@ -99,8 +99,8 @@
             <template #icon="{ record }">
               <component :is="record.icon" :size="20"></component>
             </template>
-            <template #show="{ record }">
-              <a-badge v-if="record.show === 1" :status="'success'" />
+            <template #display="{ record }">
+              <a-badge v-if="record.display === 1" :status="'success'" />
               <a-badge v-else :status="'danger'" />
             </template>
             <template #status="{ record }">
@@ -256,12 +256,12 @@
         </a-form-item>
         <a-form-item
           v-if="menuType === 0 || menuType === 1"
-          :label="$t('admin.menu.columns.show')"
+          :label="$t('admin.menu.columns.display')"
           :required="true"
-          field="show"
+          field="display"
         >
           <a-switch
-            v-model="switchShow"
+            v-model="switchDisplay"
             :checked-text="$t('switch.open')"
             :unchecked-text="$t('switch.close')"
           />
@@ -367,7 +367,7 @@
     drawerTitle.value = t('admin.menu.columns.new.drawer');
     resetForm(formDefaultValues);
     switchCache.value = true;
-    switchShow.value = true;
+    switchDisplay.value = true;
     switchStatus.value = true;
     menuType.value = 1;
     form.parent_id = pk;
@@ -432,9 +432,9 @@
       width: 100,
     },
     {
-      title: t('admin.menu.columns.show'),
-      dataIndex: 'show',
-      slotName: 'show',
+      title: t('admin.menu.columns.display'),
+      dataIndex: 'display',
+      slotName: 'display',
       align: 'center',
       width: 100,
     },
@@ -488,13 +488,13 @@
     component: undefined,
     perms: undefined,
     status: 1,
-    show: 1,
+    display: 1,
     cache: 1,
     remark: undefined,
   };
   const form = reactive<SysMenuReq>({ ...formDefaultValues });
   const switchStatus = ref<boolean>(true);
-  const switchShow = ref<boolean>(true);
+  const switchDisplay = ref<boolean>(true);
   const switchCache = ref<boolean>(true);
   const treeSelectData = ref();
   const selectTreeFieldNames: TreeFieldNames = {
@@ -577,7 +577,7 @@
       resetForm(res);
       menuType.value = res.menu_type;
       switchStatus.value = Boolean(res.status);
-      switchShow.value = Boolean(res.show);
+      switchDisplay.value = Boolean(res.display);
       switchCache.value = Boolean(res.cache);
     } catch (error) {
       // console.log(error);
@@ -648,9 +648,9 @@
   );
 
   watch(
-    () => switchShow.value,
+    () => switchDisplay.value,
     (val) => {
-      form.show = val ? 1 : 0;
+      form.display = val ? 1 : 0;
     }
   );
 
