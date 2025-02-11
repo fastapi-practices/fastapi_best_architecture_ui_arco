@@ -4,8 +4,6 @@ WORKDIR /fba_ui
 
 COPY . .
 
-RUN rm -rf node_modules
-
 RUN yarn install \
     && yarn build
 
