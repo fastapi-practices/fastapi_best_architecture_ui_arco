@@ -35,7 +35,9 @@ export default {
   // columns
   'admin.user.columns.updateUserRoles.placeholder': '确定要修改用户的角色吗？',
   'admin.user.columns.switch.true': '开启',
+  'admin.user.columns.switch.1': '开启',
   'admin.user.columns.switch.false': '关闭',
+  'admin.user.columns.switch.0': '关闭',
   'admin.user,columns.edit': '编辑',
   'admin.user.columns.edit.userinfo': '更新用户信息',
   'admin.user.columns.edit.avatar': '更新头像',

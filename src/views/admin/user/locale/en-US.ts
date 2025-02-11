@@ -37,7 +37,9 @@ export default {
   'admin.user.columns.updateUserRoles.placeholder':
     "Sure you want to modify the user's role?",
   'admin.user.columns.switch.true': 'Enable',
+  'admin.user.columns.switch.1': 'Enable',
   'admin.user.columns.switch.false': 'Disable',
+  'admin.user.columns.switch.0': 'Disable',
   'admin.user,columns.edit': 'Edit',
   'admin.user.columns.edit.userinfo': 'Update userinfo',
   'admin.user.columns.edit.avatar': 'Update avatar',
