@@ -27,6 +27,6 @@ services:
       # ensure that the docker_ssl path is consistent with that in nginx conf
       # - local_ssl_pem_path:/etc/ssl/xxx.pem
       # - local_ssl_key_path:/etc/ssl/xxx.key
-      - fba_static:/www/fba_server/backend/static
+      - fba_static:/var/www/fba_server/backend/static
     networks:
       - fba_network
