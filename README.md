@@ -4,7 +4,7 @@ Front-end Implementation of
 the [FastAPI Best Architecture](https://github.com/fastapi-practices/fastapi_best_architecture)
 
 > [!CAUTION]
-> Please keep in mind that at the moment it is only intended as a demo of the effect and not for production!
+> This is not recommended for production!
 
 ## Run
 
@@ -53,7 +53,7 @@ yarn build
 ## Special thanks
 
 - [Vue.js](https://cn.vuejs.org/guide/introduction.html)
-- [Arco-design-vue](https://github.com/arco-design)
+- [Arco Desgin](https://github.com/arco-design)
 - ...
 
 ## Sponsor us
